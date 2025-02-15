@@ -1,3 +1,6 @@
+
+
+
 import React, { useContext } from "react";
 import Search from "./Search";
 import Main from "./Main";
@@ -8,27 +11,24 @@ import Intro from "./Intro";
 
 const Cast = () => {
   const { data } = useContext(AppContext);
+
   return (
-    <div className="flex p-2">
-      <div className="w-[70%]">
-        <div className="">
-          <Search />
-        </div>
+    <div className="flex flex-col md:flex-row p-4">
+      <div className="w-full md:w-2/3">
+        <Search />
         {data ? (
-          <div>
+          <>
             <Main />
             <AirCondition />
-          </div>
+          </>
         ) : (
           <Intro />
         )}
       </div>
-      {data ? (
-        <div className="w-[30%]">
+      {data && (
+        <div className="w-full md:w-1/3 mt-6 md:mt-0">
           <Forcast />
         </div>
-      ) : (
-        <div className="w-[30%]"></div>
       )}
     </div>
   );

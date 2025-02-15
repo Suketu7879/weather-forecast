@@ -2,8 +2,9 @@
 @plugin  "daisyui";
 
 body {
-  background-image: url("assets/bg.jpg");
-  background-size: cover;
-  height: 100vh;
-  overflow: hidden;
+  /* background-image: url("assets/bg.jpg"); */
+  background-color: #070217;
+  background-size:auto;
+  /* height: 100vh; */
+  /* overflow: hidden; */
 }

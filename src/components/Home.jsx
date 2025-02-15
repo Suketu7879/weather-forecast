@@ -5,19 +5,17 @@ import logo from "../assets/logo.png";
 
 const Home = () => {
   return (
-    <div>
-      <div className="flex p-2">
-        <div className="w-[70%]">
-          <div className="">
-            <Search />
-          </div>
-          <div>
-            <Intro />
-          </div>
-        </div>
-        <div className="flex items-center">
-          <img src={logo} alt="" className="mt-24" />
-        </div>
+    <div className="flex flex-col items-center justify-center p-4 space-y-6">
+      <div className="w-full max-w-2xl">
+        <Search />
+        <Intro />
+      </div>
+      <div className="flex justify-center w-full">
+        <img
+          src={logo} 
+          alt="Weather Illustration"
+          className="w-40 md:w-52 mt-4"
+        />
       </div>
     </div>
   );
