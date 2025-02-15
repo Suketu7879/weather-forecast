@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin  "daisyui";
+
+body {
+  background-image: url("assets/bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
