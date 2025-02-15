@@ -11,6 +11,11 @@ const Search = () => {
 
   const HandleClick = async (e) => {
     e.preventDefault();
+    console.log("handleClick");
+
+    let res = await axios.get("http://localhost:8000/apikey");
+
+    console.log(res.data);
 
     const options = {
       method: "GET",
@@ -20,8 +25,8 @@ const Search = () => {
         days: "1",
       },
       headers: {
-        "x-rapidapi-key": "REACT_APP_API_KEY",
-        "x-rapidapi-host": "REACT_APP_API_HOST",
+        "x-rapidapi-key": res.data,
+        "x-rapidapi-host": "weatherapi-com.p.rapidapi.com",
       },
     };
     try {
