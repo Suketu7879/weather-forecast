@@ -1,5 +1,3 @@
-
-
 import React, { useContext } from "react";
 import { AppContext } from "../context";
 import rise from "../assets/rise.png";

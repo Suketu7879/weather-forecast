@@ -1,6 +1,3 @@
-
-
-
 import React, { useContext } from "react";
 import Search from "./Search";
 import Main from "./Main";
