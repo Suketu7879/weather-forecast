@@ -1,6 +1,7 @@
 import React from "react";
 import Search from "./Search";
 import Intro from "./Intro";
+import logo from "../assets/logo.png";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
           </div>
         </div>
         <div className="flex items-center">
-          <img src="src/assets/logo.png" alt=""  className="mt-24"/>
+          <img src={logo} alt="" className="mt-24" />
         </div>
       </div>
     </div>

@@ -1,5 +1,9 @@
 import React, { useContext } from "react";
 import { AppContext } from "../context";
+import rise from "../assets/rise.png";
+import set from "../assets/set.png";
+import moonrise from "../assets/moonrise.png";
+import moonset from "../assets/moonset.png";
 
 const Main = () => {
   const { data } = useContext(AppContext);
@@ -34,19 +38,19 @@ const Main = () => {
       {/* second card */}
       <div className="flex bg-gray-700 text-white font-bold h-42 justify-between px-20 py-28 m-2 rounded-3xl items-center">
         <div className="flex flex-col items-center font-semibold">
-          <img src="src/assets/rise.png" alt="rise" className="w-28" />
+          <img src={rise} alt="rise" className="w-28" />
           <p>{data.forecast.forecastday[0].astro.sunrise}</p>
         </div>
         <div className="flex flex-col items-center font-semibold">
-          <img src="src/assets/set.png" alt="" className="w-28" />
+          <img src={set} alt="" className="w-28" />
           <p>{data.forecast.forecastday[0].astro.sunset}</p>
         </div>
         <div className="flex flex-col items-center font-semibold">
-          <img src="src/assets/moonrise.png" alt="rise" className="w-18 mt-2" />
+          <img src={moonrise} alt="rise" className="w-18 mt-2" />
           <p className="mt-4">{data.forecast.forecastday[0].astro.moonrise}</p>
         </div>
         <div className="flex flex-col items-center font-semibold">
-          <img src="src/assets/moonset.png" alt="" className="w-18 mt-2" />
+          <img src={moonset} alt="" className="w-18 mt-2" />
           <p className="mt-4">{data.forecast.forecastday[0].astro.moonset}</p>
         </div>
       </div>
