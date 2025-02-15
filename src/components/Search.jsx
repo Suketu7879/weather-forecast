@@ -20,8 +20,8 @@ const Search = () => {
         days: "1",
       },
       headers: {
-        "x-rapidapi-key": "162e4f673dmsh7624fedf27d893fp12dc98jsnbb5e851e8f14",
-        "x-rapidapi-host": "weatherapi-com.p.rapidapi.com",
+        "x-rapidapi-key": "REACT_APP_API_KEY",
+        "x-rapidapi-host": "REACT_APP_API_HOST",
       },
     };
     try {
