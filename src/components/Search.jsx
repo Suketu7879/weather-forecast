@@ -11,11 +11,9 @@ const Search = () => {
 
   const HandleClick = async (e) => {
     e.preventDefault();
-    console.log("handleClick");
 
     let res = await axios.get("https://wheather-il9t.onrender.com/apikey");
 
-    console.log(res.data);
 
     const options = {
       method: "GET",
