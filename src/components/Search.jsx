@@ -13,7 +13,7 @@ const Search = () => {
     e.preventDefault();
     console.log("handleClick");
 
-    let res = await axios.get("http://localhost:8000/apikey");
+    let res = await axios.get("https://wheather-il9t.onrender.com/apikey");
 
     console.log(res.data);
 
