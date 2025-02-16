@@ -1,8 +1,27 @@
-# React + Vite
+# 🌤 Weather Forecast App  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **responsive** weather forecasting web application built with **ReactJS** and **RapidAPI**, providing real-time weather updates for any city worldwide!  
 
-Currently, two official plugins are available:
+## 🚀 Features  
+- 🔍 **Search any city** to get instant weather details  
+- 🌡️ **Current Temperature, Humidity, and Wind Speed**  
+- ☀️ **Sunrise & Sunset Timings**  
+- 🌦️ **Hourly & Daily Forecasts** with precipitation chances  
+- 🌀 **UV Index, Air Conditions, and Visibility**  
+- 📱 **Fully Responsive** – Works on all devices  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack  
+- **Frontend:** ReactJS (Axios, React Router, Context API)  
+- **Styling:** Tailwind CSS, DaisyUI  
+- **API:** RapidAPI (for real-time weather data)  
+- **Hosting:** Vercel  
+
+## 📷 Screenshots  
+### Home Page  
+![Weather Forecast App](./src/assets/ss/home.png)  
+
+### Weather Details  
+![Weather Details](./src/assets/ss/main.png)  
+
+## 🚀 Live Demo  
+Check out the live app here: **[Weather Forecast App](https://weather-forecast-zeta-blush.vercel.app/)**  
